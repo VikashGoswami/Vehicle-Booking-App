@@ -1,0 +1,4 @@
+DB_USERNAME="root"
+DB_PASSWORD=""
+DB_NAME="vehicle"
+DB_HOST=localhost
