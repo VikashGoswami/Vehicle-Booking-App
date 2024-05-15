@@ -9,7 +9,11 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true,
       },
-      name: {
+      firstName: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      lastName: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -42,6 +46,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Bookings');
+    await queryInterface.dropTable("Bookings");
   },
 };
